@@ -1,0 +1,407 @@
+/*CSS Reset*/
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, .promotion-section, .promotion-list, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Stle rule for body and images*/
+body{
+    background-color: black;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+
+}
+
+
+/*Style rule for mobile Viewport*/
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    background-color: #000;
+    height: 150px;
+}
+
+
+
+header img{
+    margin: 0 auto ;
+}
+
+/*Style Rule for Navigation Area*/
+nav{
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li{
+    font-size: 1.5em;
+    font-family: "Francois One", sans-serif;
+    border-top: 1px solid #fff;
+}
+
+nav li:first-child{
+    border-top: none;
+}
+
+
+nav li a{
+    display: block;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+
+/*Show mobile class Hide Desktop Class */
+.mobile{
+    display: block;
+}
+
+.tablet-desktop{
+    display: none
+}
+
+
+/*Style Rule For main Content */
+main{
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.15em;
+    font-family: "Roboto Slab", serif;
+}
+
+/*Style Rules for Product Category*/
+.product-category{
+    margin-left: 5%;
+}
+
+.product-category h3{
+    h3{
+        margin-bottom: 10px;
+        color: #333;
+    }
+}
+
+.product-category ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.product-category ul li{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.product-category ul li h4{
+    margin: 0 0 5px 0;
+}
+
+.product-category ul li p{
+    margin: 5px 0;
+}
+
+.product-category ul li button{
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/*Style Rule for team members*/
+.team-member{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.team-member h3{
+    margin: 0 0 5px 0;
+}
+
+.team-member p{
+    margin: 5px 0;
+}
+
+/*Style Rule For Offer Section*/
+.promotion-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.promotion-section h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.promotion-list {
+    list-style: none;
+    padding: 0;
+}
+
+.promotion-list li {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.promotion-list li h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #007bff;
+}
+
+.promotion-list li p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.promotion-list li strong {
+    font-weight: bold;
+}
+
+.promotion-list li button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.promotion-list li button:hover {
+    background-color: #0056b3;
+}
+
+/*css style for map */
+.map{
+    border: 2px solid #000;
+    width: 95%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+#contact{
+    text-align: center;
+}
+
+#contact .contact-email-link{
+    color: #666600;
+    text-decoration: none;
+}
+
+.tel-link{
+    background-color: #404040;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+
+/*Style rule for footer content*/
+footer p{
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+
+
+/*Media Query For Tablet ViewPort */
+@media screen and (min-width:630px){
+    .tablet-desktop{
+        display: block;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    /*Tablet ViewPort: Style Rule for header*/
+    header{
+        position: static;
+        padding-bottom: 2%;
+    }
+
+    
+
+    /*Tablet ViewPort: Style Rule for Nav Area*/
+
+    nav li{
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff;
+    }
+
+    nav li:last-child{
+        border-right: none;
+    }
+
+    nav li a{
+        padding: 0.1em .75em;
+    }
+
+    main ul{
+        margin: 0 0 4% 20%;
+    }
+
+    /*Tablet ViewPort: Style rule for Product category*/
+    .product-category{
+        margin: 20px;
+    }
+
+    .product-category ul{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+        grid-gap: 20px;
+    }
+
+    /*Style rules for special offers*/
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    
+    caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    table, th, td{
+        border: 1px solid black;
+    }
+    
+    th, td{
+        padding: 15px;
+        text-align: left;
+    }
+    
+    th{
+        background-color: #aa8787;
+    }
+    
+    tr:nth-child(odd){
+        background-color: #f9f9f9;
+    }
+    
+    tr:hover{
+        background-color: #e0e0e0;
+    }
+    
+    button{
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border:none;
+        cursor:pointer;
+    }
+    
+    button:hover{
+        background-color: #0056b3;
+    }
+    
+}
+
+
+/*Media Query For Desktop ViewPort*/
+@media screen and (min-width: 1015px){
+    /*Desktop Viewport: Style Rule For header*/
+    header{
+        float: left;
+        width: 25%;
+        padding-bottom: 0;
+    }
+
+    /*Desktop Viewport: Style Rule for nav area*/
+    nav{
+        float: right;
+        width: 70%;
+        margin: 4em 1em 0 0 ;
+    }
+
+    nav ul{
+        text-align: right;
+    }
+
+    nav li{
+        border: none;
+    }
+
+    nav li a{
+        padding: 0.5em 1em;
+    }
+
+    nav li a:hover{
+        color: #000;
+        background-color: #fff;
+    }
+
+    /*Desktop Viewport: Style rule for main content*/
+    main{
+        clear: both;
+    }
+
+    .tablet-desktop{
+        align-items: center;
+        background-color: #fff;
+
+    }
+    
+}
+
+/*Media Query for Large Desktop Viewport*/
+@media screen and (min-width: 1921px){
+    #container{
+        width: 1920px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+
